@@ -22,7 +22,7 @@ describe("getAPIKey tests", () => {
 
   it("should return null on bad api key name", () => {
     const headers: IncomingHttpHeaders = {
-      authorization: "ApiKey TestKey",
+      authorization: "BadKeyName TestKey",
     };
 
     const apiKey = getAPIKey(headers);
