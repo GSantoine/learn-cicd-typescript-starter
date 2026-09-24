@@ -9,7 +9,7 @@ describe("getAPIKey tests", () => {
     };
 
     const apiKey = getAPIKey(headers);
-    expect(apiKey).toBeTypeOf('string');
+    expect(apiKey).toBeTypeOf("string");
     expect(apiKey?.length).toBeGreaterThan(0);
   });
 
